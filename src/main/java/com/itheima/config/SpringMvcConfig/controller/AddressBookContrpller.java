@@ -33,8 +33,7 @@ public class AddressBookContrpller {
         return R.success(addressBooks);
     }
 
-
-    /*新增收货地址*/
+    /*新增收货地址1*/
     @PostMapping
     public R<AddressBook> addAddress(@RequestBody AddressBook addressBook){
         addressBook.setUserId(BaseContext.getCurrentId());
